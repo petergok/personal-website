@@ -3,6 +3,7 @@
   <head>
   	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
   	<script src="js/picturefill.js"></script>
+    <script src="js/script.js"></script>
     <title>Peter Gokhshteyn</title>
   </head>
   <body onload="init()">
@@ -10,23 +11,23 @@
   		<div id="navbar-background">
 	  		<div id="ul-container">
 				<ul id="tabs">
-		  			<li id="home">
+		  			<li>
 		  				<a href="#home">Home</a>
 			  		</li>
-		  			<li id="developer">
+		  			<li>
 	  				    <a href="#developer">Developer</a>
 		  			</li>
-			  		<li id="designer">
+			  		<li>
 		  				<a href="#designer">Designer</a>
 		  			</li>
-		  			<li id="entrepreneur">
+		  			<li>
 		  				<a href="#entrepreneur">Entrepreneur</a>
 		  			</li>
 		  		</ul>
 		  	</div>
 		</div>
   	</nav>
-  	<section id="home">
+  	<section class="tabContent hide" id="home">
 	  	<span data-picture data-alt="A beautiful image of none other than the magnificient Peter Gokhshteyn!">
 	  		<span data-src="images/selfPhotoSmall.png"></span>
 	  		<span data-src="images/selfPhotoLarge.png" data-media="(min-width: 800px)"></span>
@@ -37,7 +38,7 @@
 	        </noscript>
 	  	</span>
         <div id="text-container">
-            <ul>
+            <ul id="text-links">
                 <li class="text">
                     <a href="#developer">Developer</a>
                 </li>
@@ -56,13 +57,95 @@
             </ul>
         </div>
 	</section>
-	<section id="developer">
-
+	<section class="tabContent hide" id="developer">
+        <h1>Developer</h1>
+        <ul>
+            <li id="battle-lasers">
+                <img src="images/battle-lasers-logo.png"/>
+                <div class="summary-box">
+                    <h2>Battle Lasers</h2>
+                    <p>Created a mutiplayer puzzle game where players battle each other to hit the target with their lasers. Check it out in the <a href="https://play.google.com/store/apps/details?id=com.pianist.battlelasers">play store</a> right now!</p>
+                </div>
+                <div class="dev-type">
+                    <p class="dev-top">ANDROID + GAME + SERVER</p>
+                    <span class="helper"></span>
+                    <a href="#developer" class="details-button" data-name="battle-lasers">Show Details</a>
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>
+                            <h3>Languages used:</h3>
+                            <p>Java, Javascript</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li id="battle-lasers">
+                <img src="images/battle-lasers-logo.png"/>
+                <div class="summary-box">
+                    <h2>Battle Lasers</h2>
+                    <p>Created a mutiplayer puzzle game where players battle each other to hit the target with their lasers. Check it out in the <a href="https://play.google.com/store/apps/details?id=com.pianist.battlelasers">play store</a> right now!</p>
+                </div>
+                <div class="dev-type">
+                    <p class="dev-top">ANDROID + GAME + SERVER</p>
+                    <span class="helper"></span>
+                    <a href="#developer" class="details-button" data-name="battle-lasers-2">Show Details</a>
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>
+                            <h3>Languages used:</h3>
+                            <p>Java, Javascript</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li id="battle-lasers">
+                <img src="images/battle-lasers-logo.png"/>
+                <div class="summary-box">
+                    <h2>Battle Lasers</h2>
+                    <p>Created a mutiplayer puzzle game where players battle each other to hit the target with their lasers. Check it out in the <a href="https://play.google.com/store/apps/details?id=com.pianist.battlelasers">play store</a> right now!</p>
+                </div>
+                <div class="dev-type">
+                    <p class="dev-top">ANDROID + GAME + SERVER</p>
+                    <span class="helper"></span>
+                    <a href="#developer" class="details-button" data-name="battle-lasers-3">Show Details</a>
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>
+                            <h3>Languages used:</h3>
+                            <p>Java, Javascript</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li id="battle-lasers">
+                <img src="images/battle-lasers-logo.png"/>
+                <div class="summary-box">
+                    <h2>Battle Lasers</h2>
+                    <p>Created a mutiplayer puzzle game where players battle each other to hit the target with their lasers. Check it out in the <a href="https://play.google.com/store/apps/details?id=com.pianist.battlelasers">play store</a> right now!</p>
+                </div>
+                <div class="dev-type">
+                    <p class="dev-top">ANDROID + GAME + SERVER</p>
+                    <span class="helper"></span>
+                    <a href="#developer" class="details-button" data-name="battle-lasers-4">Show Details</a>
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>
+                            <h3>Languages used:</h3>
+                            <p>Java, Javascript</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
 	</section>
-	<section id="designer">
+	<section class="tabContent hide" id="designer">
 		
 	</section>
-	<section id="entrepreneur">
+	<section class="tabContent hide" id="entrepreneur">
 
 	</section>
   </body>
