@@ -8,9 +8,6 @@
 #navbar-background {
 	display: block;
 	background-color: black;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
 }
 
 #navbar #ul-container {
@@ -22,8 +19,6 @@
 #navbar ul {
 	display: block;
 	margin-top: 0;
-	margin-bottom: 0;
-	display: block;
 }
 
 #navbar li {
@@ -36,7 +31,7 @@
 	padding: 15px;
 	font-size: 18px;
 	text-align: center;
-	background-color: black;
+	background-color: transparent;
 	color: white;
 	border-left: 1px solid #1a1a1a;
 	border-right: 1px solid #1a1a1a;
@@ -47,19 +42,21 @@
 }
 
 img {
-	display: block;
+	display: inline-block;
 	max-width: 100%;
-	margin-left: 150px;
+	margin-left: 15%;
+	vertical-align: bottom;
 }
 
 body {
 	background-color: black;
 	margin: 0;
+	padding-bottom: 0;
+	height: 100%;
 }
 
 section {
 	display: block;
-	position: relative;
 	padding: 80px;
 	padding-bottom: 0;
 	background: url(../images/backgroundLarge.jpg);
@@ -68,4 +65,44 @@ section {
 
 a {
 	text-decoration: none;
+}
+
+#text-container {
+	margin-top: 70px;
+	display: inline-block;
+	position: absolute;
+	margin-left: 13%;
+	z-index: 1;
+}
+
+#text-container .text {
+	display: block;
+	height: 100px;
+}
+
+#text-container .text a {
+	color: white;
+	display: table;
+	font-size: 50px;
+	font-family: Futura;
+	text-align: center;
+	width: 300px; 
+	line-height: 100px;
+	margin: auto;
+}
+
+#text-container li img {
+	margin: auto;
+	vertical-align: middle;
+}
+
+#separator {
+	text-align: center;
+	height: 60px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }

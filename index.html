@@ -5,18 +5,18 @@
   	<script src="js/picturefill.js"></script>
     <title>Peter Gokhshteyn</title>
   </head>
-  <body>
+  <body onload="init()">
   	<nav id="navbar">
   		<div id="navbar-background">
 	  		<div id="ul-container">
-				<ul>
+				<ul id="tabs">
 		  			<li id="home">
 		  				<a href="#home">Home</a>
-			  			</li>
+			  		</li>
 		  			<li id="developer">
-	  				<a href="#developer">Developer</a>
+	  				    <a href="#developer">Developer</a>
 		  			</li>
-			  			<li id="designer">
+			  		<li id="designer">
 		  				<a href="#designer">Designer</a>
 		  			</li>
 		  			<li id="entrepreneur">
@@ -33,11 +33,29 @@
 
 	  		<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
 	        <noscript>
-	            <img src="selfPhotoSmall.jpg" alt="A beautiful image of none other than the magnificient Peter Gokhshteyn!">
+	            <img src="selfPhotoSmall.jpg" alt="A beautiful image of none other than the magnificient Peter Gokhshteyn!"/>
 	        </noscript>
 	  	</span>
+        <div id="text-container">
+            <ul>
+                <li class="text">
+                    <a href="#developer">Developer</a>
+                </li>
+                <li id="separator">
+                    <span class="helper"></span><img src="images/swirl.png" alt="Separator"/>
+                </li>
+                <li class="text">
+                    <a href="#designer">Designer</a>
+                </li>
+                <li id="separator">
+                    <span class="helper"></span><img src="images/swirl.png" alt="Separator"/>
+                </li>
+                <li class="text">
+                    <a href="#entrepreneur">Entrepreneur</a>
+                </li>
+            </ul>
+        </div>
 	</section>
-	<!--
 	<section id="developer">
 
 	</section>
@@ -46,6 +64,6 @@
 	</section>
 	<section id="entrepreneur">
 
-	</section>-->
+	</section>
   </body>
 </html>
