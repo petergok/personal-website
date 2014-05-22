@@ -122,6 +122,8 @@ function clickTab() {
 
     tabLinks[id].onfocus();
     tabLinks[id].click();
+
+    return false;
 };
 
 function showTab() {

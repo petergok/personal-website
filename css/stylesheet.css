@@ -59,12 +59,13 @@ body {
 	height: 100%;
 }
 
-section {
+section, #home {
 	display: block;
 	padding: 80px;
-	padding-bottom: 0;
+	padding-bottom: 0px;
 	background: url(../images/backgroundLarge.jpg);
 	background-repeat: no-repeat;
+	height: 100%;
 }
 
 a {
@@ -114,78 +115,87 @@ section.tabContent.hide {
 	display: none;
 }
 
-#developer {
+#home.tabContent.hide {
+	display: none;
+}
+
+section {
+	padding-bottom: 150px;
+}
+
+section {
 	color: white;
 	padding-top: 0;
 	font-family: Futura;
 }
 
-#developer ul {
+section ul {
 	padding: 0;
 }
 
-#developer h1 {
+section h1 {
 	font-size: 50px;
 	display: inline-block;
 }
 
-#developer h2 {
+section h2 {
 	font-size: 30px;
 	display: block;
 	margin: 0;
 }
 
-#developer p {
+section p {
 	display: inline-block;
 }
 
-#developer li {
+section li {
 	display: inline-block;
 	border: 2px solid #1a1a1a;
 	background-color: rgba(0, 0, 0, 0.7);
 	margin-left: 7%;
-	width: 80%;
+	width: 1200px;
 	margin-bottom: 50px;
 }
 
-#developer img {
+section img {
 	float: left;
-	margin-left: 0;
+	margin-top: 2px;
+	margin-left: 10px;
 	padding: 20px 20px 20px 20px;
 }
 
-#developer .details {
+section .details {
 	background-color: transparent;
 	border: none;
 	display: none;
-
 }
 
-#developer .details li {
+section .details .container {
 	background-color: transparent;
 	border: none;
 	margin-left: 5%;
 	margin-top: 30px;
 	display: block;
+	vertical-align: top;
 }
 
-#developer .details.hide {
+section .details.hide {
 	display: none;
 }
 
-#developer .summary-box {
+section .summary-box {
 	margin-top: 15px;
 	margin-left: 20px;
 	display: inline-block;
-	width: 50%;
+	width: 700px;
 }
 
-#developer .summary-box p {
+section .summary-box p {
 	font-size: 20px;
 	clear: both;
 }
 
-#developer .dev-type {
+section .dev-type {
 	margin-left: 20px;
 	display: inline-block;
 	margin-right: 40px;
@@ -193,7 +203,7 @@ section.tabContent.hide {
 	padding-bottom: 15px;
 }
 
-#developer .details-button {
+section .details-button {
 	display: block;
 	text-align: center;
 	border: 1px solid #1a1a1a;
@@ -202,15 +212,15 @@ section.tabContent.hide {
 	padding-bottom: 5px;
 }
 
-#developer .details-button:hover {
+section .details-button:hover {
 	background-color: #0a0a0a;
 }
 
-#developer .details-button.selected {
+section .details-button.selected {
 	background-color: #0a0a0a;
 }
 
-#developer .dev-type p {
+section .dev-type p {
 	display: block;
 	font-weight: 600;
 	font-size: 23px;
@@ -219,12 +229,60 @@ section.tabContent.hide {
 	height: 30px;
 }
 
-#developer a {
+section a {
 	color: #1f34ba;
 }
 
 ul {
 	list-style-type: none;
+}
+
+#designer .details-section {
+	width: 350px !important;
+	font-size: 20px !important;
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+}
+
+.details-section {
+	display: inline-block;
+	position: relative;
+	width: 170px;
+	margin-left: 15px;
+	margin-right: 15px;
+	top: 0px;
+	vertical-align: top;
+	font-size: 18px;
+}
+
+#entrepreneur p {
+	display: inline-block;
+	float: right;
+	width: 950px;
+	padding-right: 10px;
+}
+
+#entrepreneur {
+	padding-bottom: 350px
+}
+
+#entrepreneur div {
+	display: inline-block;
+	border: 2px solid #1a1a1a;
+	background-color: rgba(0, 0, 0, 0.7);
+	margin-left: 4%;
+	width: 1300px;
+	margin-bottom: 50px;
+	font-size: 25px;
+}
+
+#entrepreneur img {
+	padding-top: 50px !important;
+	padding-left: 20px;
+}
+
+#entrepreneur h1 {
+	padding-bottom: 30px;
 }
 
 p.dev-top.stretch {
@@ -233,7 +291,7 @@ p.dev-top.stretch {
  	-ms-transition: 0.5s ease-in-out;
   	-o-transition: 0.5s ease-in-out;
  	transition: 0.5s ease-in-out;
-  	height: 200px !important;
+  	height: 250px !important;
 }
 
 p.dev-top.shrink {
