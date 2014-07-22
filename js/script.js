@@ -33,7 +33,11 @@ function init() {
         var avoid = document.URL.substring(document.URL.indexOf("#") + 1);
     }
 
-    console.log(avoid);
+    if (!avoid || avoid == 'home' || avoid == 'developer') {
+        document.getElementsByTagName('html')[0].classList.remove('extend-to-bottom');
+    } else {
+        document.getElementsByTagName('html')[0].classList.add('extend-to-bottom');
+    }
 
     for ( var id in tabLinks ) {
         tabLinks[id].onclick = showTab;
@@ -128,6 +132,12 @@ function clickTab() {
 
 function showTab() {
     var selectedId = getHash( this.getAttribute('href') );
+
+    if (selectedId == 'home' || selectedId == 'developer') {
+        document.getElementsByTagName('html')[0].classList.remove('extend-to-bottom');
+    } else {
+        document.getElementsByTagName('html')[0].classList.add('extend-to-bottom');
+    }
 
     // Highlight the selected tab, and dim all others.
     // Also show the selected content div, and hide all others.
