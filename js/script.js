@@ -33,7 +33,7 @@ function init() {
         var avoid = document.URL.substring(document.URL.indexOf("#") + 1);
     }
 
-    if (avoid && avoid == 'developer') {
+    if (!avoid || avoid == 'home' || avoid == 'developer') {
         document.getElementsByTagName('html')[0].classList.remove('extend-to-bottom');
     } else {
         document.getElementsByTagName('html')[0].classList.add('extend-to-bottom');
@@ -133,7 +133,7 @@ function clickTab() {
 function showTab() {
     var selectedId = getHash( this.getAttribute('href') );
 
-    if (selectedId == 'developer') {
+    if (selectedId == 'home' || selectedId == 'developer') {
         document.getElementsByTagName('html')[0].classList.remove('extend-to-bottom');
     } else {
         document.getElementsByTagName('html')[0].classList.add('extend-to-bottom');

@@ -3,6 +3,8 @@
 	background-color: #1a1a1a;
 	padding-top: 5px;
 	padding-bottom: 1px;
+	width: 100%;
+	min-width: 1200px;
 }
 
 #navbar-background {
@@ -10,7 +12,7 @@
 	background-color: black;
 }
 
-#navbar #ul-container {
+#navbar #ul-container { 
 	display: table;
 	margin-left: auto;
 	margin-right: auto;
@@ -45,12 +47,23 @@
 	background-color: #0a0a0a;
 }
 
+#home p {
+	text-align: center;
+	background-color: black;
+	padding: 50px;
+	font-size: 35px;
+	color: white;
+	margin-top: 0px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	margin-bottom: 0px;
+}
+
 img {
 	display: inline-block;
 	max-width: 100%;
 	margin-left: 15%;
 	vertical-align: bottom;
-	bottom: 0px;
 }
 
 .extend-to-bottom, body {
@@ -59,34 +72,29 @@ img {
 	padding-bottom: 0;
 	bottom: 0px;
 	height: 100%;
-}
-
-#float-to-bottom {
-	width: 100%;
+	min-width: 1200px;
 }
 
 section, #home {
 	display: block;
+	padding: 80px;
 	padding-bottom: 0px;
+	padding-right: 0px;
 	background: url(../images/backgroundLarge.jpg);
 	background-repeat: no-repeat;
-	height: calc(100% - 57px) !important;
-	min-height: calc(100% - 57px);
+	height: 100%;
+	width: 100%;
 	position: relative;
 }
 
 #home {
-	min-width: 1150px;
+	padding-left: 0px;
+	min-width: 1200px;
 }
 
-section {
-	padding-left: 50px;
-}
-
-table {
-	height: 100%;
-	border-collapse: collapse;
-	width: 100%;
+#main-container {
+	padding-left: 80px;
+	min-width: 1070px;
 }
 
 a {
@@ -148,6 +156,7 @@ section {
 	color: white;
 	padding-top: 0;
 	font-family: Futura;
+	height: 100%;
 }
 
 section ul {
@@ -157,9 +166,6 @@ section ul {
 section h1 {
 	font-size: 50px;
 	display: block;
-	margin-top: 0px;
-	padding-top: 40px;
-	padding-left: 40px;
 }
 
 section h2 {
@@ -261,13 +267,6 @@ ul {
 	list-style-type: none;
 }
 
-#helper-main {
-	position: absolute;
-	width: 100%;
-	display: block;
-	min-height: calc(100% - 600px);
-}
-
 #designer .details-section {
 	width: 350px !important;
 	font-size: 20px !important;
@@ -297,7 +296,7 @@ ul {
 	display: inline-block;
 	border: 2px solid #1a1a1a;
 	background-color: rgba(0, 0, 0, 0.7);
-	margin-left: 6%;
+	margin-left: 4%;
 	width: 1300px;
 	margin-bottom: 50px;
 	font-size: 25px;
@@ -309,8 +308,7 @@ ul {
 }
 
 #entrepreneur h1 {
-	padding-bottom: 50px;
-	margin-bottom: 0px;
+	padding-bottom: 30px;
 }
 
 p.dev-top.stretch {
