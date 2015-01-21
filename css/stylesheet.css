@@ -205,6 +205,7 @@ section p {
 
 section li {
 	display: inline-block;
+	border: 2px solid #2a2a2a;
 	background-color: rgba(0, 0, 0, 1);
 	margin-left: 7%;
 	z-index: 1000;
@@ -300,9 +301,9 @@ ul {
 	list-style-type: none;
 }
 
-#designer .details-section {
-	width: 350px !important;
-	font-size: 18px !important;
+#engineer .details-section {
+	width: 200px !important;
+	font-size: 15px !important;
 	margin-left: 20px !important;
 	margin-right: 20px !important;
 }
@@ -347,7 +348,7 @@ ul {
 	padding-bottom: 30px;
 }
 
-#entrepreneur, #designer {
+#entrepreneur, #engineer {
 	height: 84%;
 }
 
@@ -393,4 +394,24 @@ p.dev-top.shrink {
 	top: 60px;
 	z-index: 100;
 	position: absolute;
+}
+
+#myomote img {
+	width: 100px;
+}
+
+#notify-me img {
+	width: 100px;
+}
+
+#reflex img {
+	width: 120px;
+}
+
+#retail-sensei-hardware img {
+	width: 100px;
+}
+
+#myomote-hardware img {
+	width: 100px;
 }
