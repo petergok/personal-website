@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
+ rel='stylesheet' type='text/css'>
   	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
-  	<script src="js/picturefill.js"></script>
-    <script src="js/script.js"></script>
+
     <title>Peter Gokhshteyn</title>
   </head>
   <body onload="init()">
@@ -27,6 +28,7 @@
 		  	</div>
 		</div>
   	</nav>
+    <div id="particles-js"></div>
   	<div class="tabContent hide" id="home">
         <div id="main-container">
     	  	<span data-picture data-alt="A beautiful image of none other than the magnificient Peter Gokhshteyn!">
@@ -61,7 +63,6 @@
         <p>"Choose a job you love, and you will never have to work a day in your life." - Confucius</p>
 	</div>
 	<section class="tabContent hide" id="developer">
-        <h1>Developer</h1>
         <ul>
             <li id="battle-lasers">
                 <img src="images/battle-lasers-logo.png"/>
@@ -194,7 +195,6 @@
         </ul>
 	</section>
 	<section class="tabContent hide" id="designer">
-		<h1>Designer</h1>
         <ul>
             <li id="battle-lasers">
                 <img src="images/illustrator.jpg"/>
@@ -247,11 +247,14 @@
         </ul>
 	</section>
 	<section class="tabContent hide" id="entrepreneur">
-        <h1>Entrepreneur</h1>
         <div>
             <img src="images/velocity.png"/>
             <p>I am currently living in the Velocity Residence at the University of Waterloo and working on a start-up that provides retailers with personalized customer analytics through micro-location data collected using iBeacons. Velocity is a residence program that helps students start a business and provides them with guidance along the way. The start-up is in its very early stages, but the future looks promising so hopefully there will be more here soon!</p>
         </div>
 	</section>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/script.js"></script>
 </html>

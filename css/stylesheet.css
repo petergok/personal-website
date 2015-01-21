@@ -1,3 +1,7 @@
+body {
+	font-family: 'Open Sans';
+}
+
 #navbar {
 	display: block;
 	background-color: #1a1a1a;
@@ -37,6 +41,11 @@
 	color: white;
 	border-left: 1px solid #1a1a1a;
 	border-right: 1px solid #1a1a1a;
+		-webkit-transition: background 0.15s linear;
+        -moz-transition: background 0.15s linear;
+        -ms-transition: background 0.15s linear;
+        -o-transition: background 0.15s linear;
+        transition: background 0.15s linear;
 }
 
 #navbar li a:hover {
@@ -51,18 +60,22 @@
 	text-align: center;
 	background-color: black;
 	padding: 50px;
-	font-size: 35px;
+	font-size: 30px;
 	color: white;
 	margin-top: 0px;
 	padding-top: 150px;
 	padding-bottom: 150px;
 	margin-bottom: 0px;
+	z-index: 1000;
+	position: relative;
 }
 
 img {
 	display: inline-block;
 	max-width: 100%;
 	margin-left: 15%;
+	z-index: 1000;
+	position: relative;
 	vertical-align: bottom;
 }
 
@@ -111,17 +124,28 @@ a {
 #text-container .text {
 	display: block;
 	height: 100px;
+	z-index: 1000;
+	position: relative;
 }
 
 #text-container .text a {
-	color: white;
+	color: rgba(255, 255, 255, 0.8);
 	display: table;
-	font-size: 50px;
-	font-family: Futura;
+	font-size: 40px;
 	text-align: center;
 	width: 300px; 
 	line-height: 100px;
 	margin: auto;
+		font-weight: normal;
+	-webkit-transition: color 0.25s linear;
+        -moz-transition: color 0.25s linear;
+        -ms-transition: color 0.25s linear;
+        -o-transition: color 0.25s linear;
+        transition: color 0.25s linear;
+}
+
+#text-container .text a:hover {
+	color: white;
 }
 
 #text-container li img {
@@ -154,7 +178,6 @@ section.tabContent.hide {
 
 section {
 	color: white;
-	font-family: Futura;
 	height: 100%;
 }
 
@@ -163,14 +186,15 @@ section ul {
 }
 
 section h1 {
-	font-size: 50px;
+	font-size: 45px;
 	display: block;
 	padding-top: 0;
 	margin-top: 0;
+	font-weight: normal;
 }
 
 section h2 {
-	font-size: 30px;
+	font-size: 20px;
 	display: block;
 	margin: 0;
 }
@@ -181,9 +205,10 @@ section p {
 
 section li {
 	display: inline-block;
-	border: 2px solid #1a1a1a;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 1);
 	margin-left: 7%;
+	z-index: 1000;
+	position: relative;
 	width: 1200px;
 	margin-bottom: 50px;
 	margin-right: 100px;
@@ -206,7 +231,7 @@ section .details .container {
 	background-color: transparent;
 	border: none;
 	margin-left: 5%;
-	margin-top: 30px;
+	margin-top: 50px;
 	display: block;
 	vertical-align: top;
 }
@@ -223,7 +248,7 @@ section .summary-box {
 }
 
 section .summary-box p {
-	font-size: 20px;
+	font-size: 15px;
 	clear: both;
 }
 
@@ -242,6 +267,12 @@ section .details-button {
 	color: white;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	-webkit-transition: background 0.1s linear;
+        -moz-transition: background 0.1s linear;
+        -ms-transition: background 0.1s linear;
+        -o-transition: background 0.1s linear;
+        transition: background 0.1s linear;
+
 }
 
 section .details-button:hover {
@@ -255,7 +286,7 @@ section .details-button.selected {
 section .dev-type p {
 	display: block;
 	font-weight: 600;
-	font-size: 23px;
+	font-size: 18px;
 	width: 250px;
 	text-align: center;
 	height: 30px;
@@ -271,7 +302,7 @@ ul {
 
 #designer .details-section {
 	width: 350px !important;
-	font-size: 20px !important;
+	font-size: 18px !important;
 	margin-left: 20px !important;
 	margin-right: 20px !important;
 }
@@ -284,7 +315,7 @@ ul {
 	margin-right: 15px;
 	top: 0px;
 	vertical-align: top;
-	font-size: 18px;
+	font-size: 15px;
 }
 
 #entrepreneur p {
@@ -301,16 +332,23 @@ ul {
 	margin-left: 4%;
 	width: 1300px;
 	margin-bottom: 50px;
-	font-size: 25px;
+	font-size: 19px;
+	z-index: 1000;
+	position: relative;
+
 }
 
 #entrepreneur img {
-	padding-top: 50px !important;
+	padding-top: 30px !important;
 	padding-left: 20px;
 }
 
 #entrepreneur h1 {
 	padding-bottom: 30px;
+}
+
+#entrepreneur, #designer {
+	height: 84%;
 }
 
 p.dev-top.stretch {
@@ -347,4 +385,12 @@ p.dev-top.shrink {
   	-o-transition: 250ms;
  	transition: 250ms;
   	opacity: 0 !important;
+}
+
+#particles-js {
+	width: 100%;
+	height: 660px;
+	top: 60px;
+	z-index: 100;
+	position: absolute;
 }

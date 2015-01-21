@@ -3,6 +3,54 @@ var contentDivs = new Array();
 var detailsList = new Array();
 var devTopsList = new Array();
 
+function startParticles() {
+    particlesJS('particles-js', {
+        particles: {
+          color: '#555',
+          shape: 'circle',
+          opacity: 1,
+          size: 2.5,
+          size_random: true,
+          nb: 150,
+          line_linked: {
+            enable_auto: true,
+            distance: 250,
+            color: '#555',
+            opacity: 0.5,
+            width: 1,
+            condensed_mode: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 600
+            }
+          },
+          anim: {
+            enable: true,
+            speed: 3
+          }
+        },
+        interactivity: {
+          enable: true,
+          mouse: {
+            distance: 200
+          },
+          detect_on: 'canvas',
+          mode: 'grab',
+          line_linked: {
+            opacity: .5
+          },
+          events: {
+            onclick: {
+              enable: true,
+              mode: 'push',
+              nb: 4
+            }
+          }
+        },
+        retina_detect: true
+      });
+}
+
 function init() {
 
     // Grab the tab links and content divs from the page
@@ -163,6 +211,8 @@ function showTab() {
         }
     }
 
+    reloadParticles();
+
     return false;
 };
 
@@ -176,3 +226,23 @@ function getHash(url) {
     var hashPos = url.lastIndexOf('#');
     return url.substring(hashPos + 1);
 };
+
+$( document ).ready(function() {
+    startParticles();
+});
+
+function reloadParticles() {
+    var tab = jQuery('.tabContent').not('.hide');
+        var height = 0;
+        if (tab.attr('id') == "home") {
+            height = jQuery('#main-container').outerHeight();
+        } else {
+            height = tab.outerHeight();
+        }
+        var currentHeight = jQuery('#particles-js').height();
+        if (currentHeight != height){
+            jQuery('#particles-js').height(height);
+            pJS.fn.vendors.destroy();
+            startParticles();
+        }    
+}
