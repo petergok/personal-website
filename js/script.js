@@ -227,8 +227,8 @@ function getHash(url) {
     return url.substring(hashPos + 1);
 };
 
-$( document ).ready(function() {
-    startParticles();
+imagesLoaded($("#selfPhoto"), function() {
+   startParticles();
 });
 
 function reloadParticles() {

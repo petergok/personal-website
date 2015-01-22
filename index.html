@@ -31,15 +31,7 @@
     <div id="particles-js"></div>
   	<div class="tabContent hide" id="home">
         <div id="main-container">
-    	  	<span data-picture data-alt="A beautiful image of none other than the magnificient Peter Gokhshteyn!">
-    	  		<span data-src="images/selfPhotoLarge.png"></span>
-    	  		<span data-src="images/selfPhotoLarge.png" data-media="(min-width: 800px)"></span>
-
-    	  		<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-    	        <noscript>
-    	            <img src="selfPhotoSmall.jpg" alt="A beautiful image of none other than the magnificient Peter Gokhshteyn!"/>
-    	        </noscript>
-    	  	</span>
+    	  	<img id="selfPhoto" alt="A beautiful image of none other than the magnificient Peter Gokhshteyn!" src="images/selfPhotoLarge.png">
             <div id="text-container">
                 <ul id="text-links">
                     <li class="text">
@@ -100,7 +92,7 @@
                 <img src="images/myo.png"/>
                 <div class="summary-box">
                     <h2>MyoMote</h2>
-                    <p>Infrared universal remote with recording capabilities that is controlled by a Thalmic Myo. Created the entire android app that relays the signal from the Myo to the Arduino. See a <a href="https://github.com/PeterGok/myomote">video</a> of the demo.</p>
+                    <p>Infrared universal remote with recording capabilities that is controlled by a Thalmic Myo. Created the entire android app that relays the signal from the Myo to the Arduino. See a <a href="https://www.youtube.com/watch?v=vdU4LQs4qpg">video</a> of the demo.</p>
                 </div>
                 <div class="dev-type">
                     <p class="dev-top">MOBILE + HARDWARE + EMBEDDED</p>
@@ -229,10 +221,10 @@
 	<section class="tabContent hide" id="engineer">
         <ul>
             <li id="myomote-hardware">
-                <img src="images/myo.png"/>
+                <img src="images/xlarge.png"/>
                 <div class="summary-box">
                     <h2>MyoMote</h2>
-                    <p>A universal IR remote that is controlled by the Thalmic Myo and has recording capabilities. Build using an Arduino and an Android phone that relays the Bluetooth signal from the Myo. The remote was built with an infrared emitter and reciever to allow for recording. See a <a href="https://github.com/PeterGok/myomote">video</a> of the demo.</p>
+                    <p>A universal IR remote that is controlled by the Thalmic Myo and has recording capabilities. Build using an Arduino and an Android phone that relays the Bluetooth signal from the Myo. The remote was built with an infrared emitter and reciever to allow for recording. See a <a href="https://www.youtube.com/watch?v=vdU4LQs4qpg">video</a> of the demo.</p>
                 </div>
                 <div class="dev-type">
                     <p class="dev-top">HARDWARE + MOBILE + EMBEDDED</p>
@@ -322,7 +314,7 @@
 	</section>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/picturefill.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/script.js"></script>
 </html>
